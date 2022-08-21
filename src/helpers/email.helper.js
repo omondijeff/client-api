@@ -4,8 +4,8 @@ const transporter = nodemailer.createTransport({
   host: "bhs106.truehost.cloud",
   port: 465,
   auth: {
-    user: "support@compacthydro.co.ke",
-    pass: "#operationhydrate2022",
+    user: process.env.EMAIL_USER,
+    pass: process.env.EMAIL_PASSWORD,
   },
 });
 
